@@ -1,0 +1,174 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 0px;
+    background: url(/images/Las_Vegas_bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*------------------------------Special Margins,Paddings, colors*/
+
+.btn-success {
+    color: #eeebde;
+    background-color: #3c3c3c;
+    border-color: #919089;
+
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #e55731;
+    ;
+    border-color: #398439;
+}
+
+.bg-light {
+    background-color: #eeebdee6!important;
+}
+
+
+/*---------------------------------------Containers*/
+
+.container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+
+/*---------------------------------------Navbar*/
+
+
+.navbar {
+    border-radius: 0px;
+    
+}
+
+
+.navbar-brand {
+    color: #404040;
+    text-shadow: -2px 0px 1px #e55731;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    display: inline-block;
+    color: #e54d25;
+    text-decoration: none;
+    margin-right: 3em;
+    font-family: "Circular-Bold-S";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    letter-spacing: 0.1em;
+    padding: 0.5em 0;
+    position: relative;
+    text-align: center;
+}
+
+
+
+/*---------------------------------------Jumbotron*/
+
+.jumbotron h1 {
+    color: #404040;
+    text-shadow: -10px 2px 1px #e55731;
+    font-weight: bold;
+    font-size: 88px;
+    text-transform: uppercase;
+    border-left: 3px solid #eeebde;
+    border-right: 3px solid #eeebde;
+}
+
+.jumbotron p {
+    margin-bottom: 25px;
+    margin-top: 32px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #eeebde;
+}
+
+.jumbotron #fomb{
+    font-size: 20px;
+}
+
+.text-center {
+    color: #6c757d!important;
+}
+
+
+/*---------------------------------------Footer*/
+
+footer {
+
+    color: #fafafa;
+
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 5px;
+    line-height: 5px;
+    /* Vertically center the text there */
+    background-color: #3c3c3c;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    display: inline-block;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.col-sm-4 {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
+}
+
+.uppercase.general-sub {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+#footer-details {
+    background-color: #3c3c3c;
+    height: 10%;
+}
+
+
+
+@media (min-width: 768px) {
+.navbar {
+    border-radius: 0px;
+}    
+}
