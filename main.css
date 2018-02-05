@@ -6,13 +6,25 @@ html {
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 0px;
+    margin: 0 0 100px;
     background: url(/images/Las_Vegas_bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
 }
+
+footer {
+    color: #fafafa;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    width: 100%;
+    overflow:hidden;
+}
+
 
 /*------------------------------Special Margins,Paddings, colors*/
 
@@ -107,9 +119,6 @@ body {
 
 /*---------------------------------------Footer*/
 
-footer {
-    color: #fafafa;
-}
 
 
 .footer {
@@ -224,4 +233,103 @@ footer {
         padding-bottom: 0;
         overflow: visible!important;
     }
+}
+
+
+/*---------------------Booking HTML*/
+
+#form {
+    float: left;
+}
+
+.control-label {
+    color: #f8f8f8;
+}
+
+
+/*---------------------Contact HTML*/
+
+.form-group {
+    color: #f8f8f8;
+}
+
+.form-group-1 {
+    color: #3c3c3c;
+}
+
+#form-contact {
+    padding: 10px;
+}
+
+.controls {
+    padding-top: 22px;
+}
+
+.text-yo {
+    color: #f8f8f8;
+    font-weight: lighter;
+    font-size: smaller; 
+}
+
+/*---------------------Gallery*/
+
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #3c3c3c;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+
+/*---------------------Music*/
+
+.spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
