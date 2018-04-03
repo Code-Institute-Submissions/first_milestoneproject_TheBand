@@ -12,7 +12,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+
 }
 
 footer {
@@ -20,9 +20,9 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
-    
+
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 
@@ -46,6 +46,9 @@ footer {
     background-color: #eeebde!important;
 }
 
+.featurette-divider {
+    margin: 80px 0;
+}
 
 /*---------------------------------------Containers*/
 
@@ -56,6 +59,16 @@ footer {
     color: #fff;
 }
 
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
 /*---------------------------------------Navbar*/
 
 .navbar {
@@ -63,6 +76,9 @@ footer {
 
 }
 
+.nav-item {
+    list-style-type: none;
+}
 
 .navbar-brand {
     color: #404040;
@@ -81,11 +97,19 @@ footer {
     text-transform: uppercase;
     font-size: 0.875em;
     letter-spacing: 0.1em;
-    padding: 0.5em 0;
+    padding-top: 19px;
     position: relative;
     text-align: center;
 }
 
+
+
+#corner-logo {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: -20px;
+}
 
 
 /*---------------------------------------Jumbotron*/
@@ -117,9 +141,25 @@ footer {
 }
 
 
+/*------------------------------Profile section*/
+
+.img-circle {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#profile-pics {
+    background-color: rgba(0, 0, 0, 0.25);    
+}
+
+
 /*---------------------------------------Footer*/
-
-
 
 .footer {
     position: absolute;
@@ -212,10 +252,10 @@ footer {
     .jumbotron p {
         font-size: 14px;
     }
-    
+
     .jumbotron #fomb {
-    font-size: 10px;
-}
+        font-size: 10px;
+    }
 }
 
 
@@ -234,7 +274,6 @@ footer {
         overflow: visible!important;
     }
 }
-
 
 /*---------------------Booking HTML*/
 
@@ -268,20 +307,19 @@ footer {
 .text-yo {
     color: #f8f8f8;
     font-weight: lighter;
-    font-size: smaller; 
+    font-size: smaller;
 }
 
 /*---------------------Gallery*/
 
-
-.gallery-title
-{
+.gallery-title {
     font-size: 36px;
     color: #3c3c3c;
     text-align: center;
     font-weight: 500;
     margin-bottom: 70px;
 }
+
 .gallery-title:after {
     content: "";
     position: absolute;
@@ -292,8 +330,7 @@ footer {
 }
 
 
-.gallery_product
-{
+.gallery_product {
     margin-bottom: 30px;
 }
 
@@ -301,35 +338,35 @@ footer {
 /*---------------------Music*/
 
 .spin {
-  -webkit-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  animation: spin 2s infinite linear;
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
 }
 
 @-moz-keyframes spin {
-  from {
-    -moz-transform: rotate(0deg);
-  }
-  to {
-    -moz-transform: rotate(360deg);
-  }
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
 }
 
 @-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
