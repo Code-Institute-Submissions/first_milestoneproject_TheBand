@@ -7,12 +7,13 @@ html {
 body {
     /* Margin bottom by footer height */
     margin: 0 0 100px;
-    background: url('https://coderguider.github.io/milestoneproject_band/assests/images/bgimg.jpeg') no-repeat center center fixed;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.25);
+    background: url('https://coderguider.github.io/milestoneproject_band/assests/images/bgimg2.jpg') no-repeat center center fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.66);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    margin-bottom: 0px;
 
 }
 
@@ -21,9 +22,10 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
-
     width: 100%;
     overflow: hidden;
+    /*box-shadow: inset 0 0 0 1000px rgba(0,0,0,.66);*/
+
 }
 
 
@@ -37,8 +39,8 @@ footer {
 }
 
 .btn-success:hover {
-    color: #eeebde;
-    background-color: #3c3c3c;
+    color: black;
+    background-color: gold;
     ;
     border-color: #919089;
 }
@@ -54,10 +56,11 @@ footer {
 /*---------------------------------------Containers*/
 
 .container-fluid .jumbotron {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 70px;
+    padding-left: 70px;
     background-color: rgba(0, 0, 0, 0.25);
     color: #fff;
+    margin-bottom: 0px;
 }
 
 
@@ -72,37 +75,49 @@ footer {
 
 /*---------------------------------------Navbar*/
 
-.navbar {
-    border-radius: 0px;
+/*.navbar {*/
+/*    border-radius: 0px;*/
+/*    margin-bottom: 0px;*/
 
-}
+/*}*/
 
-.nav-item {
-    list-style-type: none;
-}
+/*.nav-item {*/
+/*    list-style-type: none;*/
+/*}*/
 
-.navbar-brand {
-    color: #404040;
-    text-shadow: -2px 0px 1px #e55731;
-    font-weight: bold;
-    font-size: 25px;
-}
+/*.navbar-brand {*/
+/*    color: #404040;*/
+/*    text-shadow: -2px 0px 1px #e55731;*/
+/*    font-weight: bold;*/
+/*    font-size: 25px;*/
+/*}*/
 
-.navbar-light .navbar-nav .nav-link {
-    display: inline-block;
+/*.navbar-light .navbar-nav .nav-link {*/
+    /*display: inline-block;*/
+    /*color: gold;*/
+    /*text-decoration: none;*/
+    /*margin-right: 3em;*/
+    /*font-family: inherit;*/
+    /*font-weight: bold;*/
+    /*text-transform: uppercase;*/
+    /*font-size: 1em;*/
+    /*letter-spacing: 0.1em;*/
+    /*padding-top: 19px;*/
+    /*position: relative;*/
+    /*text-align: center;*/
+/*}*/
+
+.navbar-default .navbar-nav>li>a {
     color: gold;
-    text-decoration: none;
-    margin-right: 3em;
-    font-family: "Circular-Bold-S";
-    font-weight: bold;
+    font-family: inherit;
+    /*font-weight: bold;*/
     text-transform: uppercase;
-    font-size: 0.875em;
+    font-size: 1em;
     letter-spacing: 0.1em;
-    padding-top: 19px;
-    position: relative;
-    text-align: center;
 }
-
+.navbar-default .navbar-nav>li>a:hover {      
+    color: white;
+}
 
 
 #corner-logo {
@@ -121,8 +136,8 @@ footer {
     font-weight: bold;
     font-size: 88px;
     text-transform: uppercase;
-    border-left: 3px solid #eeebde;
-    border-right: 3px solid #eeebde;
+    /*border-left: 3px solid #eeebde;*/
+    /*border-right: 3px solid #eeebde;*/
 }
 
 .jumbotron p {
@@ -156,9 +171,9 @@ footer {
     color: #eeebde;
 }
 
-/*#profile-pics {*/
-/*    background-color: rgba(0, 0, 0, 0.25);    */
-/*}*/
+#profile-pics h2 {
+    color: aliceblue;
+}
 
 
 /*----------------------------------Featurette*/
@@ -168,7 +183,7 @@ footer {
 }
 
 .featurette-heading .text-muted {
-    color: red;
+    color: azure;
 }
 
 .lead {
@@ -199,7 +214,7 @@ footer {
     text-align: center;
     color: #3c3c3c;
     display: inline-block;
-    background: #f8f8f8;
+    background: gold;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -212,7 +227,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    background: #e84610;
+    background: white;
 }
 
 .uppercase.general-sub {
@@ -225,13 +240,13 @@ footer {
 }
 
 #foot-home {
-    color: #f8f8f8;
+    color: gold;
     text-decoration: none;
     font-weight: bold;
 }
 
 #foot-home:hover {
-    color: #e55731;
+    color: white;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -239,13 +254,13 @@ footer {
 }
 
 #foot-contact {
-    color: #f8f8f8;
+    color: gold;
     text-decoration: none;
     font-weight: bold;
 }
 
 #foot-contact:hover {
-    color: #e55731;
+    color: white;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -253,44 +268,11 @@ footer {
 }
 
 #footer-details {
-    background-color: #3c3c3c;
+    background-color: rgba(0,0,0,0);
     height: 10%;
-    font-family: "Circular-Bold-S";
-}
-
-/*---------------------Media Queries*/
-
-@media only screen and (max-width: 480px) {
-    .jumbotron h1 {
-        font-size: 39px!important;
-        text-shadow: -3px 1px 1px #e55731;
-    }
-
-    .jumbotron p {
-        font-size: 14px;
-    }
-
-    .jumbotron #fomb {
-        font-size: 10px;
-    }
 }
 
 
-@media (min-width: 768px) {
-    .navbar {
-        border-radius: 0px;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .navbar-collapse.collapse {
-        display: block!important;
-        height: auto!important;
-        padding-bottom: 0;
-        overflow: visible!important;
-    }
-}
 
 /*---------------------Booking HTML*/
 
@@ -335,6 +317,7 @@ footer {
     text-align: center;
     font-weight: 500;
     margin-bottom: 70px;
+    text-transform: uppercase;
 }
 
 .gallery-title:after {
@@ -385,5 +368,40 @@ footer {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+
+/*---------------------Media Queries*/
+
+@media only screen and (max-width: 480px) {
+    .jumbotron h1 {
+        font-size: 39px!important;
+        text-shadow: -3px 1px 1px #e55731;
+    }
+
+    .jumbotron p {
+        font-size: 14px;
+    }
+
+    .jumbotron #fomb {
+        font-size: 10px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .navbar-collapse.collapse {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+        overflow: visible!important;
     }
 }

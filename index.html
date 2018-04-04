@@ -12,55 +12,79 @@
     <link rel="stylesheet" href="assests/css/main.css"> </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="navbar-left" id="corner-logo"> <a href="index.html"><img src="assests/images/monkees-header-50-logo.png" alt="logo" style="width:88%"></a> </div>
-        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-        <!--<span class="navbar-toggler-icon"></span>-->
-        <!--</button>-->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"> <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a> </li>
-                <li class="nav-item"> <a class="nav-link" href="music.html">Music</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="photos.html">Photos</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="videos.html">Videos</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="booking.html">Booking</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="theband.html">The Band</a> </li>
-            </ul>
+    <!---New Navbar---->
+    <nav class="navbar navbar-default bg-light">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <div class="navbar-left" id="corner-logo"> <a href="index.html"><img src="assests/images/monkees-header-50-logo.png" alt="logo" style="width:88%"></a> </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="music.html">Music</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="photos.html">Photos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="videos.html">Videos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="booking.html">Booking</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="theband.html">The Band</a> </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <!--</ul>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
     </nav>
+    <!-- end of new Navbar--->
+    
     <div class="container-fluid" id="media">
         <div class="jumbotron text-center">
             <h1 class="display-4">The Monkees</h1>
-            <p class="lead">Welcome to the unofficial website of The Monkees. Consisting of Michael Nesmith, Micky Dolenz, Davy Jones and Peter Tork together have over 50 years of experience performing live all around the world. On this site you can hear all the latest
-                news, the music, the tours and follow them on their social media feeds.</p>
+            <p class="lead"><br>Welcome to the unofficial website of The Monkees. Michael Nesmith, Micky Dolenz, Davy Jones and Peter Tork together have over 50 years of experience performing live all around the world. On this site you can hear all the latest news, the
+                music, the tours and follow them on their social media feeds. <br><br>The Monkees are currently available for bookings.</p>
             <hr class="my-4">
-            <p id="fomb">Hear the latest news below.</p>
-            <p class="lead"> <a class="btn btn-success btn-lg" href="booking.html" role="button">Hear more.</a> </p>
+            <p id="fomb"><b>Click below to check availability</b></p>
+            <p class="lead"> <a class="btn btn-success btn-lg" href="booking.html" role="button">Booking</a> </p>
         </div>
     </div>
-    <hr class="featurette-divider">
     <div class="container marketing">
         <!-- Three columns of text below the carousel -->
+        <hr class="featurette-divider">
         <div class="row" id="profile-pics">
             <h1 class="gallery-title">Meet The Band</h1>
             <div class="col-lg-4"> <img class="img-circle" src="assests/images/tork_a.jpg" alt="Peter Tork" width="140" height="140">
                 <h2>Peter Tork</h2>
                 <p>Born in 1942, Peter Tork discovered a passion for music early on. He participated in the New York City folk scene in the early 1960s. Moving to California, he landed a part in The Monkees television series in 1965. The fictional band soon
-                    became a real hit, scoring several No. 1 songs. Tork left the group in the late 1960s, but he has reunited with the Monkees several times over the years.</p>
+                    became a real hit, scoring several No. 1 songs. Tork left the group in the late 1960s, but he has reunited with the Monkees several times over the years.</p> <br>
                 <p><a class="btn btn-success btn-sm" href="theband.html" role="button">Learn More</a></p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4"> <img class="img-circle" src="assests/images/ms.jpg" alt="Michael Nesmith" width="140" height="140">
                 <h2>Michael Nesmith</h2>
                 <p>Born in Texas in 1942, Nesmith served in the U.S. Air Force before pursuing a career in music. He signed on to become a member of the Monkees, a television rock group, in the mid-1960s. The Monkees enjoyed tremendous success on the pop
-                    charts. After he left the group in 1970s, Nesmith pursued solo projects. He has occasionally reunited with his Monkees bandmates over the years.</p>
+                    charts. After he left the group in 1970s, Nesmith pursued solo projects. He has occasionally reunited with his Monkees bandmates over the years.</p> <br>
                 <p><a class="btn btn-success btn-sm" href="theband.html" role="button">Learn More</a></p>
             </div>
             <!-- /.col-lg-4 -->
             <div class="col-lg-4"> <img class="img-circle" src="assests/images/Micky-Dolenz.jpg" alt="Micky Dolenz" width="140" height="140">
                 <h2>Micky Dolenz</h2>
                 <p>Micky Dolenz was born on March 8, 1945 in Los Angeles. He had a few television roles and played with bands before being cast in The Monkees, a show about a fictitious rock band. Though made for TV, The Monkees had real-life hits and struggled
-                    against their "Pre-Fab Four" image. The series was canceled in 1968 and the band split in 1969. Dolenz has appeared on Broadway and worked as a tv director.</p>
+                    against their "Pre-Fab Four" image. The series was canceled in 1968 and the band split in 1969. Dolenz has appeared on Broadway and worked as a tv director.</p> <br>
                 <p><a class="btn btn-success btn-sm" href="theband.html" role="button">Learn More</a></p>
             </div>
             <!-- /.col-lg-4 -->
@@ -100,7 +124,7 @@
         <!-- /END THE FEATURETTES -->
     </div>
 </body>
-<hr class="featurette-divider">
+
 <footer class="container-fluid">
     <div id="footer-details" class="row">
         <div class="col-sm-4" id="footer-home">
