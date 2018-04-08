@@ -3,15 +3,17 @@ html {
     min-height: 100%;
 }
 
+
 body {
     /* Margin bottom by footer height */
     margin: 0 0 100px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://coderguider.github.io/milestoneproject_band/assests/images/bgimg.jpeg');
+    background: #fafae6;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     margin-bottom: 0px;
+
 }
 
 footer {
@@ -21,7 +23,10 @@ footer {
     bottom: 0;
     width: 100%;
     overflow: hidden;
+    /*box-shadow: inset 0 0 0 1000px rgba(0,0,0,.66);*/
+
 }
+
 
 /*------------------------------Special Margins,Paddings, colors*/
 
@@ -29,6 +34,7 @@ footer {
     color: #fff;
     background-color: #e55731;
     border-color: #398439;
+
 }
 
 .btn-success:hover {
@@ -46,10 +52,6 @@ footer {
     margin: 80px 0;
 }
 
-hr {
-    border: 0;
-}
-
 /*---------------------------------------Containers*/
 
 .container-fluid .jumbotron {
@@ -60,6 +62,7 @@ hr {
     margin-bottom: 0px;
 }
 
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -67,7 +70,10 @@ hr {
     margin-left: auto;
 }
 
+
+
 /*---------------------------------------Navbar*/
+
 
 .navbar.navbar-default {
     background-color: #f8f8f8;
@@ -77,7 +83,7 @@ hr {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: gold;
+    color: black;
     font-family: inherit;
     /*font-weight: bold;*/
     text-transform: uppercase;
@@ -85,15 +91,13 @@ hr {
     letter-spacing: 0.1em;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover {      
     color: white;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #2D0;
-    background-color: rgba(209, 207, 100, .2);
+    background-color: rgba(209,207,100,.2);
     border-bottom: solid;
 }
 
@@ -101,13 +105,12 @@ hr {
     border-color: gold;
 }
 
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: white;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: rgb(209, 207, 100);
+    background-color: rgb(209,207,100);
 }
 
 .navbar.navbar-default .navbar-collapse {
@@ -117,11 +120,43 @@ hr {
     box-shadow: none;
 }
 
+
 #corner-logo {
     margin: 0px 0px -20px 20px;
     height: 107px;
     width: 156px;
+   
 }
+
+
+/*---------------------------------------Jumbotron*/
+
+.jumbotron h1 {
+    color: gold;
+    text-shadow: -10px 2px 1px darkslategrey;
+    font-weight: bold;
+    font-size: 88px;
+    text-transform: uppercase;
+    /*border-left: 3px solid #eeebde;*/
+    /*border-right: 3px solid #eeebde;*/
+}
+
+.jumbotron p {
+    margin-bottom: 25px;
+    margin-top: 32px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #eeebde;
+}
+
+.jumbotron #fomb {
+    font-size: 20px;
+}
+
+.text-center {
+    color: #6c757d!important;
+}
+
 
 /*------------------------------Profile section*/
 
@@ -141,22 +176,30 @@ hr {
     color: aliceblue;
 }
 
-#duhduh {
+#duhduh {   
     color: #eeebde;
 }
+
 
 /*----------------------------------Featurette*/
 
 .featurette-heading {
-    color: orange;
+    color: black;
 }
 
 .featurette-heading .text-muted {
-    color: azure;
+    color: black;
 }
 
 .lead {
-    color: #eeebde;
+    color: #000;
+}
+
+.featurette-image {
+    float: left;
+    padding-right:10px;
+    padding-bottom: 10px;
+    padding-top:4px;
 }
 
 /*---------------------------------------Footer*/
@@ -182,7 +225,7 @@ hr {
     text-align: center;
     color: #3c3c3c;
     display: inline-block;
-    background: gold;
+    background: red;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -208,7 +251,7 @@ hr {
 }
 
 #foot-home {
-    color: gold;
+    color: red;
     text-decoration: none;
     font-weight: bold;
 }
@@ -222,7 +265,7 @@ hr {
 }
 
 #foot-contact {
-    color: gold;
+    color: red;
     text-decoration: none;
     font-weight: bold;
 }
@@ -236,9 +279,11 @@ hr {
 }
 
 #footer-details {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0,0,0,0);
     height: 10%;
 }
+
+
 
 /*---------------------Booking HTML*/
 
@@ -250,16 +295,36 @@ hr {
     color: #f8f8f8;
 }
 
-.container-booking {
-    margin-left: 55px;
-    margin-right: 25px;
+
+/*---------------------Contact HTML*/
+
+.form-group {
+    color: #f8f8f8;
+}
+
+.form-group-1 {
+    color: #3c3c3c;
+}
+
+#form-contact {
+    padding: 10px;
+}
+
+.controls {
+    padding-top: 22px;
+}
+
+.text-yo {
+    color: #f8f8f8;
+    font-weight: lighter;
+    font-size: smaller;
 }
 
 /*---------------------Gallery*/
 
 .gallery-title {
     font-size: 36px;
-    color: gold;
+    color: red;
     text-align: center;
     font-weight: 500;
     margin-bottom: 70px;
@@ -272,11 +337,51 @@ hr {
     width: 7.5%;
     left: 46.5%;
     height: 45px;
+    border-bottom: 1px solid #5e5e5e;
 }
+
 
 .gallery_product {
     margin-bottom: 30px;
 }
+
+
+/*---------------------Music*/
+
+.spin {
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 /*---------------------Media Queries*/
 
@@ -285,19 +390,23 @@ hr {
         font-size: 39px!important;
         text-shadow: -3px 1px 1px #e55731;
     }
+
     .jumbotron p {
         font-size: 14px;
     }
+
     .jumbotron #fomb {
         font-size: 10px;
     }
 }
+
 
 @media (min-width: 768px) {
     .navbar {
         border-radius: 0px;
     }
 }
+
 
 @media (min-width: 768px) {
     .navbar-collapse.collapse {
