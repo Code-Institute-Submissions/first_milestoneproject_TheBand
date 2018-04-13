@@ -3,18 +3,16 @@ html {
     min-height: 100%;
 }
 
-
 body {
     /* Margin bottom by footer height */
     margin: 0 0 100px;
     background: url('https://coderguider.github.io/milestoneproject_band/assests/images/bgimg2.jpg') no-repeat center center fixed;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.66);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .66);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     margin-bottom: 0px;
-
 }
 
 footer {
@@ -25,9 +23,7 @@ footer {
     width: 100%;
     overflow: hidden;
     /*box-shadow: inset 0 0 0 1000px rgba(0,0,0,.66);*/
-
 }
-
 
 /*------------------------------Special Margins,Paddings, colors*/
 
@@ -35,7 +31,6 @@ footer {
     color: #fff;
     background-color: #e55731;
     border-color: #398439;
-
 }
 
 .btn-success:hover {
@@ -63,7 +58,6 @@ footer {
     margin-bottom: 0px;
 }
 
-
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -71,34 +65,33 @@ footer {
     margin-left: auto;
 }
 
-
-
 /*---------------------------------------Navbar*/
-
 
 .navbar.navbar-default {
     background-color: #f8f8f8;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+    padding-top: 0px;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: gold;
     font-family: inherit;
-    /*font-weight: bold;*/
     text-transform: uppercase;
     font-size: 1em;
     letter-spacing: 0.1em;
 }
 
-.navbar-default .navbar-nav>li>a:hover {      
+.navbar-default .navbar-nav>li>a:hover {
     color: white;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
     color: #2D0;
-    background-color: rgba(209,207,100,.2);
+    background-color: rgba(209, 207, 100, .2);
     border-bottom: solid;
 }
 
@@ -106,29 +99,27 @@ footer {
     border-color: gold;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: white;
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: rgb(209,207,100);
+    background-color: rgb(209, 207, 100);
 }
 
 .navbar.navbar-default .navbar-collapse {
-    padding-top: 16px;
+    padding-top: 0px;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
-
 #corner-logo {
     margin: 0px 0px -20px 20px;
     height: 107px;
     width: 156px;
-   
 }
-
 
 /*---------------------------------------Jumbotron*/
 
@@ -158,7 +149,6 @@ footer {
     color: #6c757d!important;
 }
 
-
 /*------------------------------Profile section*/
 
 .img-circle {
@@ -177,15 +167,19 @@ footer {
     color: aliceblue;
 }
 
-#duhduh {   
+#duhduh {
     color: #eeebde;
 }
-
 
 /*----------------------------------Featurette*/
 
 .featurette-heading {
-    color: orange;
+    color: #eee427;
+}
+
+.featurette-heading a {
+    color: #eee427;
+    text-decoration: none;
 }
 
 .featurette-heading .text-muted {
@@ -195,7 +189,6 @@ footer {
 .lead {
     color: #eeebde;
 }
-
 
 /*---------------------------------------Footer*/
 
@@ -246,7 +239,7 @@ footer {
 }
 
 #foot-home {
-    color: gold;
+    color: #eee427;
     text-decoration: none;
     font-weight: bold;
 }
@@ -260,7 +253,7 @@ footer {
 }
 
 #foot-contact {
-    color: gold;
+    color: #eee427;
     text-decoration: none;
     font-weight: bold;
 }
@@ -274,11 +267,9 @@ footer {
 }
 
 #footer-details {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     height: 10%;
 }
-
-
 
 /*---------------------Booking HTML*/
 
@@ -289,7 +280,6 @@ footer {
 .control-label {
     color: #f8f8f8;
 }
-
 
 /*---------------------Contact HTML*/
 
@@ -319,7 +309,7 @@ footer {
 
 .gallery-title {
     font-size: 36px;
-    color: gold;
+    color: #eee427;
     text-align: center;
     font-weight: 500;
     margin-bottom: 70px;
@@ -332,14 +322,17 @@ footer {
     width: 7.5%;
     left: 46.5%;
     height: 45px;
-    border-bottom: 1px solid #5e5e5e;
+    border: none;
 }
 
+.gallery-title a {
+    text-decoration: none;
+    color: #eee427;
+}
 
 .gallery_product {
     margin-bottom: 30px;
 }
-
 
 /*---------------------Music*/
 
@@ -377,7 +370,6 @@ footer {
     }
 }
 
-
 /*---------------------Media Queries*/
 
 @media only screen and (max-width: 480px) {
@@ -385,29 +377,40 @@ footer {
         font-size: 39px!important;
         text-shadow: -3px 1px 1px #e55731;
     }
-
     .jumbotron p {
         font-size: 14px;
     }
-
     .jumbotron #fomb {
         font-size: 10px;
     }
-}
-
-
-@media (min-width: 768px) {
-    .navbar {
-        border-radius: 0px;
+    .navbar.navbar-default .navbar-collapse {
+        padding-top: 10px;
     }
 }
 
-
-@media (min-width: 768px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .navbar {
+        border-radius: 0px;
+    }
+    .navbar-nav {
+        margin: 0px;
+        padding-top: 16px;
+    }
     .navbar-collapse.collapse {
         display: block!important;
         height: auto!important;
         padding-bottom: 0;
         overflow: visible!important;
+    }
+    .navbar-right {
+        float: left!important;
+        padding-top: 0px!important;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .navbar-right {
+        float: left!important;
+        padding-top: 0px!important;
     }
 }

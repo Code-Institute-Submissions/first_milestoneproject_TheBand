@@ -106,7 +106,7 @@ footer {
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: white;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -114,7 +114,7 @@ footer {
 }
 
 .navbar.navbar-default .navbar-collapse {
-    padding-top: 16px;
+    padding-top: 0px;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -185,6 +185,7 @@ footer {
 
 .featurette-heading {
     color: black;
+    text-decoration: none;
 }
 
 .featurette-heading .text-muted {
@@ -201,6 +202,14 @@ footer {
     padding-bottom: 10px;
     padding-top:4px;
 }
+
+.float-right {
+    float: right;
+    padding-left:10px;
+    padding-bottom: 10px;
+    padding-top:4px;
+}
+
 
 /*---------------------------------------Footer*/
 
@@ -324,11 +333,13 @@ footer {
 
 .gallery-title {
     font-size: 36px;
-    color: red;
+    color: black;
     text-align: center;
     font-weight: 500;
     margin-bottom: 70px;
     text-transform: uppercase;
+    font-family: 'Shrikhand', serif;
+    font-size: 50px;
 }
 
 .gallery-title:after {
@@ -337,7 +348,7 @@ footer {
     width: 7.5%;
     left: 46.5%;
     height: 45px;
-    border-bottom: 1px solid #5e5e5e;
+    border: none;
 }
 
 
@@ -390,29 +401,40 @@ footer {
         font-size: 39px!important;
         text-shadow: -3px 1px 1px #e55731;
     }
-
     .jumbotron p {
         font-size: 14px;
     }
-
     .jumbotron #fomb {
         font-size: 10px;
     }
-}
-
-
-@media (min-width: 768px) {
-    .navbar {
-        border-radius: 0px;
+    .navbar.navbar-default .navbar-collapse {
+        padding-top: 10px;
     }
 }
 
-
-@media (min-width: 768px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .navbar {
+        border-radius: 0px;
+    }
+    .navbar-nav {
+        margin: 0px;
+        padding-top: 16px;
+    }
     .navbar-collapse.collapse {
         display: block!important;
         height: auto!important;
         padding-bottom: 0;
         overflow: visible!important;
+    }
+    .navbar-right {
+        float: left!important;
+        padding-top: 0px!important;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .navbar-right {
+        float: left!important;
+        padding-top: 0px!important;
     }
 }
