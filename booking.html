@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Monkees</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
@@ -35,73 +36,67 @@
                     <li class="nav-item"> <a class="nav-link" href="news.html">News</a> </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media <span class="caret"></span></a>-->
-                    <!--<ul class="dropdown-menu">-->
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    <!--</ul>-->
-                    <!--</li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-    
     <div class="container-booking">
         <h1 class="gallery-title">Book The Band</h1>
         <div class="row featurette booking">
             <div class="col-md-6">
                 <h2 class="featurette-heading">The Monkees are touring again<span class="text-muted"> And they're available to be booked by YOU.</span></h2>
                 <p class="lead">The iconic band is now performing concerts worldwide for a limited time. Check the bands availability by filling in the short form below and we'll be in contact with you directly for more details.</p>
-                
+                <br>
                 <form class="form-horizontal">
-                <!-- Form Name -->
-                <div class="container col-md-10" id="form">
-                    <!-- Text input-->
-                    <div class="form-group"> <label class="col-md-4 control-label" for="bookdate">Date*</label>
-                        <div class="col-md-8"> <input id="coname" name="coname" type="text" placeholder="date" class="form-control input-md" required> </div>
-                    </div>
-                    <!-- Text input-->
-                    <div class="form-group"> <label class="col-md-4 control-label" for="coname">Name*</label>
-                        <div class="col-md-8"> <input id="coname" name="coname" type="text" placeholder="name" class="form-control input-md" required> </div>
-                    </div>
-                    <!-- Text input-->
-                    <div class="form-group"> <label class="col-md-4 control-label" for="bookguests">Expected number of guests</label>
-                        <div class="col-md-8"> <input id="bookguests" name="bookguests" type="text" placeholder="guests" class="form-control input-md"> </div>
-                    </div>
-                    <!-- Text input-->
-                    <div class="form-group"> <label class="col-md-4 control-label" for="booktel">Contact Number*</label>
-                        <div class="col-md-8"> <input id="booktel" name="booktel" type="text" placeholder="contact number" class="form-control input-md" required="false"> </div>
-                    </div>
-                    <!-- Text input-->
-                    <div class="form-group"> <label class="col-md-4 control-label" for="bookeml">Email*</label>
-                        <div class="col-md-8"> <input id="bookeml" name="bookeml" type="text" placeholder="email" class="form-control input-md" required=""> </div>
-                    </div>
-                    <!-- Textarea -->
-                    <div class="form-group"> <label class="col-md-4 control-label" for="bookaddress">Other Details</label>
-                        <div class="col-md-8"> <textarea class="form-control" id="bookaddress" name="bookaddress"></textarea> </div>
-                    </div>
-                    <div class="profile text-center">
-                        <hr>
-                        <p id="duhduh"><b>Submit your booking request below and we'll be in contact with you.</b></p>
-                        <p class="lead"> <a class="btn btn-success btn-md" href="theband.html" role="button">Submit</a> </p>
-                    </div>
-                </div>
-            </form>
+                    <!-- Form Name -->
+                    <div class="container col-md-10" id="form">
+                        <!-- Text input-->
+                        <div class="form-group"> <label class="col-md-4 control-label" for="bookdate">Date*</label>
+                            <div class="col-md-4"> <input id="datepicker" name="bookdate" type="text" placeholder="dd/mm/yyyy" class="form-control input-md" required> </div>
                         </div>
-
-            <div class="col-md-6">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="assests/images/theboys.jpg" data-holder-rendered="true">
-            </div>    
-                <hr class="featurette-divider">
-            
-        </div>
+                        <!-- Text input-->
+                        <div class="form-group"> <label class="col-md-4 control-label" for="coname">Name*</label>
+                            <div class="col-md-8"> <input id="coname" name="coname" type="text" placeholder="Full Name" class="form-control input-md" required> </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group"> <label class="col-md-4 control-label" for="bookguests">Expected number of guests</label>
+                            <div class="col-md-8"> <input id="bookguests" name="bookguests" type="text" placeholder="number of guests" class="form-control input-md"> </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group"> <label class="col-md-4 control-label" for="booktel">Contact Number*</label>
+                            <div class="col-md-8"> <input id="booktel" name="booktel" type="text" placeholder="contact number" class="form-control input-md" required="false"> </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group"> <label class="col-md-4 control-label" for="bookeml">Email*</label>
+                            <div class="col-md-8"> <input id="bookeml" name="bookeml" type="text" placeholder="email" class="form-control input-md" required=""> </div>
+                        </div>
+                        <!-- Textarea -->
+                        <div class="form-group"> <label class="col-md-4 control-label" for="bookaddress">Other Details</label>
+                            <div class="col-md-8"> <textarea class="form-control" id="bookaddress" name="bookaddress"></textarea> </div>
+                        </div>
+                        <div class="profile text-center">
+                            <hr>
+                            <p id="duhduh"><b>Submit your booking request below and we'll be in contact with you.</b></p>
+                            <p class="lead"> <a class="btn btn-success btn-md" href="#" role="button">Submit</a> </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6"> <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="assests/images/theboys.jpg" data-holder-rendered="true"> </div>
+            <hr class="featurette-divider"> </div>
     </div>
-</body>
-<br><br><br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="scripts/js.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body> <br><br><br>
 <footer>
     <div id="footer-details" class="row">
         <div class="col-sm-4 col-xs-4" id="footer-home">
@@ -120,7 +115,5 @@
         </div>
     </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
