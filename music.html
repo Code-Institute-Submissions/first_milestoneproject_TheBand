@@ -5,61 +5,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Monkees</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assests/css/main.css">
-</head>
+    <link rel="stylesheet" href="assests/css/music.css"> </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">THE MONKEES</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="music.html">Music</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="photos.html">Photos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="videos.html">Videos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="booking.html">Booking</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
+    <!---New Navbar---->
+    <nav class="navbar navbar-default bg-light">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <div class="navbar-left" id="corner-logo"> <a href="index.html"><img src="assests/images/monkees-header-50-logo.png" alt="logo" style="width:88%"></a> </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+                    <li class="nav-item active"> <a class="nav-link" href="music.html">Music<span class="sr-only">(current)</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="photos.html">Photos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="booking.html">Booking</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="theband.html">The Band</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="news.html">News</a> </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
     </nav>
-    <div class="container-fluid" id="media">
-        <div class="jumbotron text-center">
-            <h2 class="display-4">The Monkees Playlist</h2>
-            <iframe src="https://open.spotify.com/embed?uri=spotify:user:monkeesofficial:playlist:5Jo2n73rclgmBTz2h9JIcn" 
-            width="350" height="400" frameborder="0" allowtransparency="true"></iframe>
-            <hr class="my-4">
-            <p id="fomb">Want to listen to more? Click below</p>
-            <p class="lead">
-                <a class="btn btn-success btn-lg" href="https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck?si=rhgAeSllQiGmRHYth2T3CQ" target="_blank" role="button">Hear more</a>
-            </p>
+    <!-- Media --->
+    <div class="container-fluid">
+        <h1 class="gallery-title">Media Library</h1>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <h2 class="display">The Monkees Spotify Playlist</h2><br><br> <iframe src="https://open.spotify.com/embed?uri=spotify:user:monkeesofficial:playlist:5Jo2n73rclgmBTz2h9JIcn" width="400" height="800" frameborder="0" allowtransparency="true"></iframe> <br><br>
+                <p id="fomb">Want to listen to more? Click below to visit Spotify page.</p>
+                <p class="lead"> <a class="btn btn-success btn-md" href="https://open.spotify.com/artist/320EPCSEezHt1rtbfwH6Ck?si=rhgAeSllQiGmRHYth2T3CQ" target="_blank" role="button">Hear more</a> </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 text-center">
+                <h2 class="display">Downloadable Music Library</h2>
+                <h3 class="display">Track List</h3> <br>
+                <ul class="lead">
+                    <li>“Clarksville”</li>
+                    <li>“Daydream Believer”</li>
+                    <li>“I'm a Believer”</li>
+                    <li>“Stepping Stone”</li>
+                </ul> <br>
+                <div class="container-row">
+                    <h3 class="display">1. <audio controls="controls"><source src="assests/audio/Clarksville.mp3" type="audio/mpeg" /></audio></h3>
+                    <h3 class="display">2. <audio controls="controls"><source src="assests/audio/DaydreamBeliever.mp3" type="audio/mpeg" /></audio></h3>
+                    <h3 class="display">3. <audio controls="controls"><source src="assests/audio/ImABeliever.mp3" type="audio/mpeg" /></audio></h3>
+                    <h3 class="display">4. <audio controls="controls"><source src="assests/audio/SteppingStone.mp3" type="audio/mpeg" /></audio></h3>
+                </div> <br>
+                <div class="container-fluid">
+                    <h2 class="display">Videos</h2> <br>
+                    <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xvqeSJlgaNk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div> <br> </div>
+            </div>
         </div>
     </div>
-</body>
-<br><br><br>
-
+</body> <br><br><br>
 <footer class="container-fluid">
     <div id="footer-details" class="row">
         <div class="col-sm-4 col-xs-4" id="footer-home">
@@ -78,5 +93,7 @@
         </div>
     </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
