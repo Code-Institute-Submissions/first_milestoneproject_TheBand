@@ -25,18 +25,6 @@ footer {
 
 /*------------------------------Special Margins,Paddings, colors*/
 
-.btn-success {
-    color: #fff;
-    background-color: #e55731;
-    border-color: #398439;
-}
-
-.btn-success:hover {
-    color: black;
-    background-color: #eee427;
-    ;
-    border-color: #919089;
-}
 
 .bg-light {
     background-color: rgba(0, 0, 0, 0)!important;
@@ -232,16 +220,7 @@ hr {
 /*---------------------Media Queries*/
 
 @media only screen and (max-width: 480px) {
-    .jumbotron h1 {
-        font-size: 39px!important;
-        text-shadow: -3px 1px 1px #e55731;
-    }
-    .jumbotron p {
-        font-size: 14px;
-    }
-    .jumbotron #fomb {
-        font-size: 10px;
-    }
+    
     .navbar.navbar-default .navbar-collapse {
         padding-top: 10px;
     }
