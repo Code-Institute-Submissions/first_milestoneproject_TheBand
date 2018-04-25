@@ -3,7 +3,6 @@ html {
     min-height: 100%;
 }
 
-
 body {
     /* Margin bottom by footer height */
     margin: 0 0 100px;
@@ -13,7 +12,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
     margin-bottom: 0px;
-
 }
 
 footer {
@@ -24,9 +22,7 @@ footer {
     width: 100%;
     overflow: hidden;
     /*box-shadow: inset 0 0 0 1000px rgba(0,0,0,.66);*/
-
 }
-
 
 /*------------------------------Special Margins,Paddings, colors*/
 
@@ -34,7 +30,6 @@ footer {
     color: #fff;
     background-color: #e55731;
     border-color: #398439;
-
 }
 
 .btn-success:hover {
@@ -52,6 +47,37 @@ footer {
     margin: 80px 0;
 }
 
+#myBtn {
+    display: none; 
+    position: fixed;
+    bottom: 90px;
+    right: 60px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+#myBtn:hover {
+    background-color: gold;
+    color: black;
+}
+
+.gallery_product {
+    padding-bottom: 15px;
+    margin-bottom: 0px!important;
+}
+
+.gallery_product img {
+    height: 300px;
+    width: 365px;
+    object-fit: cover;
+}
 /*---------------------------------------Containers*/
 
 .container-fluid .jumbotron {
@@ -62,7 +88,6 @@ footer {
     margin-bottom: 0px;
 }
 
-
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -70,10 +95,7 @@ footer {
     margin-left: auto;
 }
 
-
-
 /*---------------------------------------Navbar*/
-
 
 .navbar.navbar-default {
     background-color: #f8f8f8;
@@ -91,13 +113,16 @@ footer {
     letter-spacing: 0.1em;
 }
 
-.navbar-default .navbar-nav>li>a:hover {      
+.navbar-default .navbar-nav>li>a:hover {
     color: gold;
+    
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
     color: #2D0;
-    background-color: rgba(209,207,100,.2);
+    background-color: rgba(209, 207, 100, .2);
     border-bottom: solid;
 }
 
@@ -105,12 +130,13 @@ footer {
     border-color: gold;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
     background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: rgb(209,207,100);
+    background-color: rgb(209, 207, 100);
 }
 
 .navbar.navbar-default .navbar-collapse {
@@ -120,43 +146,11 @@ footer {
     box-shadow: none;
 }
 
-
 #corner-logo {
     margin: 0px 0px -20px 20px;
     height: 107px;
     width: 156px;
-   
 }
-
-
-/*---------------------------------------Jumbotron*/
-
-.jumbotron h1 {
-    color: gold;
-    text-shadow: -10px 2px 1px darkslategrey;
-    font-weight: bold;
-    font-size: 88px;
-    text-transform: uppercase;
-    /*border-left: 3px solid #eeebde;*/
-    /*border-right: 3px solid #eeebde;*/
-}
-
-.jumbotron p {
-    margin-bottom: 25px;
-    margin-top: 32px;
-    font-size: 25px;
-    font-weight: 300;
-    color: #eeebde;
-}
-
-.jumbotron #fomb {
-    font-size: 20px;
-}
-
-.text-center {
-    color: #6c757d!important;
-}
-
 
 /*------------------------------Profile section*/
 
@@ -176,10 +170,9 @@ footer {
     color: aliceblue;
 }
 
-#duhduh {   
+#duhduh {
     color: #eeebde;
 }
-
 
 /*----------------------------------Featurette*/
 
@@ -198,18 +191,17 @@ footer {
 
 .featurette-image {
     float: left;
-    padding-right:10px;
+    padding-right: 10px;
     padding-bottom: 10px;
-    padding-top:4px;
+    padding-top: 4px;
 }
 
 .float-right {
     float: right;
-    padding-left:10px;
+    padding-left: 10px;
     padding-bottom: 10px;
-    padding-top:4px;
+    padding-top: 4px;
 }
-
 
 /*---------------------------------------Footer*/
 
@@ -235,10 +227,10 @@ footer {
     color: #3c3c3c;
     display: inline-block;
     background: red;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
 }
 
 .col-sm-4 {
@@ -247,7 +239,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    background: white;
+    background: gold;
 }
 
 .uppercase.general-sub {
@@ -266,11 +258,11 @@ footer {
 }
 
 #foot-home:hover {
-    color: white;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    color: gold;
+    transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
 }
 
 #foot-contact {
@@ -280,19 +272,17 @@ footer {
 }
 
 #foot-contact:hover {
-    color: white;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    color: gold;
+    transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
 }
 
 #footer-details {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     height: 10%;
 }
-
-
 
 /*---------------------Booking HTML*/
 
@@ -303,7 +293,6 @@ footer {
 .control-label {
     color: #f8f8f8;
 }
-
 
 /*---------------------Contact HTML*/
 
@@ -351,11 +340,9 @@ footer {
     border: none;
 }
 
-
 .gallery_product {
     margin-bottom: 30px;
 }
-
 
 /*---------------------Music*/
 
@@ -393,7 +380,6 @@ footer {
     }
 }
 
-
 /*---------------------Media Queries*/
 
 @media only screen and (max-width: 480px) {
@@ -410,6 +396,13 @@ footer {
     .navbar.navbar-default .navbar-collapse {
         padding-top: 10px;
     }
+    
+    #myBtn {
+    bottom: 12px;
+    right: 26px;
+    padding: 9px;
+    font-size: 9px;
+}
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
@@ -430,11 +423,10 @@ footer {
         float: left!important;
         padding-top: 0px!important;
     }
+    #myBtn {
+    bottom: 21px;
+    right: 30px;
+    padding: 10px;
+    font-size: 13px;
 }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .navbar-right {
-        float: left!important;
-        padding-top: 0px!important;
-    }
 }
