@@ -5,112 +5,206 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Monkees</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand:400,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assests/css/main.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assests/css/news.css"> </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">THE MONKEES</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Music</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="photos.html">Photos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="videos.html">Videos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="booking.html">Booking</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="theband.html">The Band<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
+    <!---New Navbar---->
+    <nav class="navbar navbar-default bg-light">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <div class="navbar-left" id="corner-logo"> <a href="index.html"><img src="assests/images/monkees-header-50-logo.png" alt="logo" style="width:88%"></a> </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="music.html">Music</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="photos.html">Photos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="booking.html">Booking</a> </li>
+                    <li class="nav-item active"> <a class="nav-link" href="theband.html">The Band<span class="sr-only">(current)</span></a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="news.html">News</a> </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <!--</ul>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container-fluid -->
     </nav>
-
-<form id="contact-form" method="post" action="contact.php" role="form">
-
-    <div class="controls">
-
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_name">Firstname *</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group-1">
-                    <label for="form_lastname">Lastname *</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="form_email">Email *</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group-1">
-                    <label for="form_phone">Phone</label>
-                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">Message *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for The Monkees *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                    <div class="help-block with-errors"></div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-success btn-send" value="Send message">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p class="text-yo"><strong>*</strong> These fields are required. We reply to all fan messages.</p>
-            </div>
-        </div>
+    <!-- end of new Navbar--->
+    <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <!-- START THE FEATURETTES -->
+        <h1 class="gallery-title">Meet The Monkees</h1>
+        <div class="row featurette">
+            <div class="container">
+                <h2 class="featurette-heading">A Brief History of The Monkees</h2>
+                <p class="gallery_product"><a href="assests/images/monkees_the_band_color.jpeg" data-fancybox="gallery" data-caption="Reunion - The boys are back.">
+	            <img src="assests/images/monkees_the_band_color.jpeg" width="600" height="337" alt="" class="featurette-image img-responsive"></a>The Monkees were an American rock and pop band originally active between 1966 and 1971, with reunion albums
+                    and tours in the decades that followed. They were formed in Los Angeles in 1965 by Bob Rafelson and Bert Schneider for the American television series <i>The Monkees</i> which aired from 1966 to 1968. The musical acting quartet was
+                    composed of Americans Micky Dolenz, Michael Nesmith, and Peter Tork; and British actor and singer Davy Jones. The band's music was initially supervised by producer Don Kirshner, backed by the songwriting duo of Tommy Boyce and Bobby
+                    Hart.</p>
+                <p>The four actor-musicians were allowed only limited roles in the recording studio for the first few months of their five-year career as "The Monkees". This was due in part to the amount of time required to film the television series. Nonetheless,
+                    Nesmith did compose and produce some songs from the beginning, and Peter Tork contributed limited guitar work on the sessions produced by Nesmith. They eventually fought for the right to collectively supervise all musical output under
+                    the band's name. The television show was canceled in 1968, but the band continued to record music through 1971.</p>
+                <p>A revival of interest in the television show came in 1986, which led to a series of reunion tours and new records. The group reunited and toured several times with varying degrees of success.</p>
+                <p>Davy Jones died suddenly on February 29, 2012, but the surviving members reunited for a tour in November–December 2012 and again in 2013 for a 24-date tour. The Monkees continued to tour through their 2016 50th Anniverary, with Dolenz
+                    and Tork forming the core of the band and Nesmith continuing to join them occasionally.</p>
+                <p>Dolenz described the Monkees as initially being "a TV show about an imaginary band… that wanted to be the Beatles that was never successful". Ironically, the actor-musicians became one of the most successful bands of the 1960s. The Monkees
+                    have sold more than 50 million records worldwide and had international hits, including "Last Train to Clarksville", "Pleasant Valley Sunday", "Daydream Believer", and "I'm a Believer". Newspapers and magazines reported that the Monkees
+                    outsold the Beatles and the Rolling Stones combined in 1967, but Nesmith claims in his autobiography Infinite Tuesday that it was a lie that he told an Australian reporter.</p><br>
+                <h2 class="featurette-heading">Conception</h2>
+                <p>Aspiring filmmaker Bob Rafelson developed the initial idea for <i>The Monkees</i> in 1962, but was unsuccessful in selling the series. He had tried selling it to Revue, the television division of Universal Pictures. In May 1964, while
+                    working at Screen Gems, Rafelson teamed up with Bert Schneider, whose father, Abraham Schneider, headed the Colpix Records and Screen Gems Television units of Columbia Pictures. Rafelson and Schneider ultimately formed Raybert Productions.</p>
+                <p>The Beatles' film <i>A Hard Day's Night</i> inspired Rafelson and Schneider to revive Rafelson's idea for <i>The Monkees.</i> As "The Raybert Producers", they sold the show to Screen Gems Television on April 16, 1965. Rafelson and Schneider's
+                    original idea was to cast an existing New York folk rock group, the Lovin' Spoonful, who were not widely known at the time. However, John Sebastian had already signed the band to a record contract, which would have denied Screen Gems
+                    the right to market music from the show.</p>
+                <p class="gallery_product"><a href="assests/images/The_Monkees_1966.JPG" data-fancybox="gallery" data-caption="Reunion - The boys are back.">
+	            <img src="assests/images/The_Monkees_1966.JPG" style="width:344px !important;height:auto !important;" alt="" class="img-responsive float-right"></a>On July 14, 1965, <i>The Hollywood Reporter</i> stated that future band member Davy Jones was expected to return
+                    to the United States in September 1965 after a trip to England "to prepare for TV pilot for Bert Schneider and Bob Rafelson". Jones had previously starred as the Artful Dodger in the Broadway theatre show <i>Oliver!</i>, which debuted
+                    on December 17, 1962, and his performance was later seen on <i>The Ed Sullivan Show</i> the same night as the Beatles' first appearance on that show, February 9, 1964. He was nominated for a Tony Award for Best Featured Actor in a
+                    Musical in 1963. In September 1964 he was signed to a long-term contract to appear in TV programs for Screen Gems, make feature films for Columbia Pictures and to record music for the Colpix label. Rafelson and Schneider already had
+                    him in mind for their project after their plans for the Lovin' Spoonful fell through; when they chose him, he was essentially a proto-star looking for his lucky break.</p>
+                <p>On September 8–10, 1965, <i>Daily Variety</i> and <i>The Hollywood Reporter</i> ran an ad to cast the remainder of the band/cast members for the TV show:</p>
+                <p><i>Madness!! Auditions. Folk & Roll Musicians-Singers for acting roles in new TV series. Running Parts for 4 insane boys, age 17-21. Want spirited Ben Frank's types. Have courage to work. Must come down for interview.</i></p>
+                <p>Out of 437 applicants, the other three chosen for the cast of the TV show were Michael Nesmith, Peter Tork and Micky Dolenz. Nesmith had been working as a musician since early 1963 and had been recording and releasing music under various
+                    names, including Michael Blessing and "Mike & John & Bill" and had studied drama in college. Of the final four, Nesmith was the only one who actually saw the ad in <i>Daily Variety</i> and <i>The Hollywood Reporter.</i> Tork, the last
+                    to be chosen, had been working the Greenwich Village scene as a musician, and had shared the stage with Pete Seeger; he learned of The Monkees from Stephen Stills, whom Rafelson and Schneider had rejected as a songwriter. Dolenz was
+                    an actor (his father was veteran character actor George Dolenz) who had starred in the TV series Circus Boy as a child, using the stage name Mickey Braddock, and he had also played guitar and sung in a band called the Missing Links
+                    before the Monkees, which had recorded and released a very minor single, "Don't Do It". By that time he was using his real name; he found out about <i>The Monkees</i> through his agent.</p><br>
+                <h2 class="featurette-heading">From Television to Concert Stage</h2>
+                <p class="gallery_product"><a href="assests/images/the-monkees_wide.jpg" data-fancybox="gallery" data-caption="Reunion - The boys are back.">
+	            <img src="assests/images/the-monkees_wide.jpg" style="width:438px !important;height:auto !important;" alt="" class="featurette-image img-responsive"></a>In assigning instruments for purposes of the television show, a dilemma arose as to which of the four would be the drummer. Both Nesmith (a skilled guitarist and bassist) and Tork (who could play several stringed and keyboard instruments)
+                    were peripherally familiar with the instrument but both declined to give the drum set a try. Jones knew how to play the drums and tested well enough initially on the instrument, but the producers felt that, behind a drum kit, the camera
+                    would exaggerate his short stature and make him virtually hidden from view. Dolenz (who only knew how to play the guitar) was assigned to become the drummer. Tork taught Dolenz his first few beats on the drums, enough for him
+                    to fake his way through filming the pilot, but he was soon taught how to play properly. The lineup for the TV show most frequently featured Nesmith on guitar, Tork on bass, Dolenz on drums and Jones as a frontman, singer and
+                    percussionist. This, however, is in opposition to the lineup which would have made the most sense based upon the members' musical strengths. For example, Tork was actually a more experienced guitar player than Nesmith, while Nesmith
+                    had at one time specifically trained on the bass. While Jones certainly had a strong lead voice and sings lead on several Monkees recordings, Dolenz's voice is regarded, particularly by Nesmith, as one of the most distinctive in popular
+                    music history and a hallmark of the Monkees' sound. This theoretical lineup was actually depicted once, in the music video for the band's song "Words", which shows Jones on drums, Tork playing lead guitar, Nesmith on bass and Dolenz
+                    fronting the group. In concert appearances Tork also took much of the guitar duties, even in appearances with Nesmith, and Dolenz often plays rhythm guitar on stage.</p>
+                <p>Unlike most television shows of the time, The Monkees episodes were written with many setups, requiring frequent breaks to prepare the set and cameras for short bursts of filming. Some of the "bursts" are considered proto-music videos,
+                    inasmuch as they were produced to sell the records. The Monkees Tale author Eric Lefcowitz noted that the Monkees were—first and foremost—a video group. The four actors would spend 12-hour days on the set, many of them waiting for
+                    the production crew to do their jobs. Noticing that their instruments were left on the set unplugged, the four decided to turn them on and start playing.</p>
+                <p>After working on the set all day, the Monkees (usually Dolenz or Jones) would be called into the recording studio to cut vocal tracks. As the band was essential to this aspect of the recording process, there were few limits on how long
+                    they could spend in the recording studio, and the result was an extensive catalogue of unreleased recordings.</p>
+                <h3 class="featurette-heading">On tour</h3>
+                <p>Pleased with their initial efforts, Columbia (over Kirshner's objections) planned to send the Monkees out to play live concerts. The massive success of the series—and its spin-off records—created intense pressure to mount a touring version
+                    of the group. Against the initial wishes of the producers, the band went out on the road and made their debut live performance in December 1966 in Hawaii.</p>
+                <p class="gallery_product"><a href="assests/images/the_monkees_bw.jpg" data-fancybox="gallery" data-caption="Reunion - The boys are back.">
+	            <img src="assests/images/the_monkees_bw.jpg" style="width:438px !important;height:auto !important;"alt="" class="img-responsive float-right"></a>They had no time to rehearse a live performance except between takes on set. They worked on the TV series all day, recorded in the studio at night and slept very little. The weekends were usually filled with special appearances or filming
+                    of special sequences. These performances were sometimes used during the actual series. The episode "Too Many Girls (Fern and Davy)" opens with a live version of "(I'm Not Your) Steppin' Stone" being performed as the scene was shot.
+                    One entire episode was filmed featuring live music. The last show of the premiere season, "Monkees on Tour", was shot in a documentary style by filming a concert in Phoenix, Arizona, on January 21, 1967. Bob Rafelson wrote and directed
+                    the episode.</p>
+                <p>In DVD commentary tracks included in the Season One release, Nesmith admitted that Tork was better at playing guitar than bass. In Tork's commentary he stated that Jones was a good drummer, and had the live performance lineups been based
+                    solely on playing ability, it should have been Tork on guitar, Nesmith on bass and Jones on drums, with Dolenz taking the fronting role. The four Monkees performed all the instruments and vocals for most of the live set. The most notable
+                    exceptions were during each member's solo sections where, during the December 1966 – May 1967 tour, they were backed by the Candy Store Prophets. During the summer 1967 tour of the United States and the UK (from which the Live 1967
+                    recordings are taken), they were backed by a band called the Sundowners. The Monkees toured Australia and Japan in 1968. The results were far better than expected. Wherever they went, the group was greeted by scenes of fan adulation
+                    reminiscent of Beatlemania. This gave the singers increased confidence in their fight for control over the musical material chosen for the series.</p>
+                <p>With Jones sticking primarily to vocals and tambourine (except when filling in on the drums when Dolenz came forward to sing a lead vocal), the Monkees' live act constituted a classic power trio of electric guitar, electric bass and drums
+                    (except when Tork passed the bass part to Jones or one of the Sundowners in order to take up the banjo or electric keyboards).</p> <br>
+                <h2 class="featurette-heading">The Monkees Go Independent</h2>
+                <p>Phil Spector, 1968 Pop Chronicles interview. Independence Headquarters and Pisces, Aquarius, Capricorn & Jones The Monkees wanted to pick the songs they sang and play on the songs they recorded, and be the Monkees. With Kirshner dismissed
+                    as musical supervisor, in late February 1967 Nesmith hired former Turtles bassist Douglas Farthing Hatlelid, who was better known by his stage name Chip Douglas, to produce the next Monkees album, which was to be the first Monkees
+                    album where they were the only musicians, outside of most of the bass, and the horns. Douglas was responsible for both music presentation—actually leading the band and engineering recordings—and playing bass on most of Headquarters.
+                    This album, along with their next, Pisces, Aquarius, Capricorn & Jones Ltd., would serve as the soundtrack to the second season of the television show.</p>
+                <p>In March 1967 "The Girl I Knew Somewhere", composed by Nesmith and performed by Dolenz, Nesmith, Tork and bassist John London, was issued as the B-side to the Monkees' third single, "A Little Bit Me, a Little Bit You", and it rose to No.
+                    39 on the charts. The A-side rose to No. 2.</p>
+                <p class="gallery_product"><a href="assests/images/The_Monkees_May_1967.jpg" data-fancybox="gallery" data-caption="Reunion - The boys are back.">
+	            <img src="assests/images/The_Monkees_May_1967.jpg" style="width:800px !important;height:auto !important;" alt="" class="featurette-image img-responsive float-center"></a>Issued in May 1967, Headquarters had no songs released as singles in the United States, but it would still be their third No. 1 album in a row, with many of its songs played on the second season of the television show. Having a more country-folk-rock
+                    sound than the pop outings under Kirshner, Sandoval notes in the 2007 Deluxe Edition reissue from Rhino that the album rose to No. 1 on May 24, 1967, with the Beatles' Sgt. Pepper released the following week, which would knock Headquarters
+                    to the #2 spot on the charts for the next 11 weeks, the same weeks which would become known by the counterculture as the "Summer of Love". A selection that Dolenz wrote and composed, "Randy Scouse Git", was issued under the title "Alternate
+                    Title" (owing to the controversial nature of its original title) as a single internationally, where it rose to No. 2 on the charts in the UK and Norway, and in the top 10 in other parts of the world. Tork's "For Pete's Sake" would
+                    be used as the closing theme for the television show. Nesmith would continue in his country-rock leanings, adding the pedal steel guitar to three of the songs, along with contributing his self-composed countrified-rock song "Sunny
+                    Girlfriend". Tork added the banjo to the Nesmith-composed rocker "You Told Me", a song whose introduction was satirical of the Beatles' "Taxman". Other notable songs are the Nesmith-composed straightforward pop-rock song "You Just
+                    May Be the One", used on the television series during both seasons, along with "Shades of Gray" (with piano introduction written by Tork), "Forget that Girl" and "No Time", used in the television show. The Monkees wrote five of the
+                    12 songs on the album, plus the two tracks "Band 6" and "Zilch". The Los Angeles Times, when reviewing Headquarters, stated that "The Monkees Upgrade Album Quality" and that "The Monkees are getting better. Headquarters has more interesting
+                    songs and a better quality level [than previous albums] . . . None of the tracks is a throwaway . . . The improvement trend is laudable."</p>
+                <p>The high of Headquarters was short-lived, however. Recording and producing as a group was Tork's major interest and he hoped that the four would continue working together as a band on future recordings, according to the liner notes of
+                    the 2007 Rhino reissue of Pisces, Aquarius, Capricorn & Jones Ltd.. "Cuddly Toy" on Pisces, Aquarius, Capricorn & Jones Ltd. would mark the last time Dolenz, who originally played guitar before the Monkees, would make a solo stand
+                    as a studio drummer. In commentary for the DVD release of the second season of the show, Tork said that Dolenz was "incapable of repeating a triumph." Having been a drummer for one album, Dolenz lost interest in being a drummer and
+                    indeed, he largely gave up playing instruments on Monkees recordings (producer Chip Douglas also had identified Dolenz's drumming as the weak point in the collective musicianship of the quartet, having to splice together multiple takes
+                    of Dolenz's "shaky" drumming for final use). By this point the four did not have a common vision regarding their musical interests, with Nesmith and Jones also moving in different directions—Nesmith following his country/folk instincts
+                    and Jones reaching for Broadway-style numbers. The next three albums featured a diverse mixture of musical style influences, including country-rock, folk-rock, psychedelic rock, soul/R&B, guitar rock, Broadway and English music hall
+                    sensibilities.</p>
+                <p>At the height of their fame in 1967, they also suffered from a media backlash. Nesmith states in the 2007 Rhino reissue of Pisces, Aquarius, Capricorn & Jones Ltd., "Everybody in the press and in the hippie movement had got us into their
+                    target window as being illegitimate and not worthy of consideration as a musical force [or] certainly any kind of cultural force. We were under siege; wherever we went there was such resentment for us. We were constantly mocked and
+                    humiliated by the press. We were really gettin' beat up pretty good. We all knew what was going on inside. Kirshner had been purged. We'd gone to try to make Headquarters and found out that it was only marginally okay and that our
+                    better move was to just go back to the original songwriting and song-making strategy of the first albums except with a clear indication of how [the music] came to be . . . The rabid element and the hatred that was engendered is almost
+                    impossible to describe. It lingers to this day among people my own age." Tork disagreed with Nesmith's assessment of Headquarters, stating, "I don't think the Pisces album was as groovy to listen to as Headquarters. Technically it
+                    was much better, but I think it suffers for that reason."</p>
+                <p class="gallery_product"><a href="assests/images/The_Monkees_LastFM.jpg" data-fancybox="gallery" data-caption="Reunion - The boys are back.">
+	            <img src="assests/images/The_Monkees_LastFM.jpg" style="width:555px !important;height:auto !important;" alt="" class="featurette-image img-responsive float-right"></a>With Pisces, Aquarius, Capricorn & Jones Ltd., the Monkees' fourth album, they went back to making music for the television show, except that they had control over the music and which songs would be chosen. They used a mixture of themselves
+                    and session musicians on the album. They would use this strategy of themselves playing, plus adding session musicians (including the Wrecking Crew, Louie Shelton, Glen Campbell, members of the Byrds and the Association, drummer "Fast"
+                    Eddie Hoh, Lowell George, Stephen Stills, Buddy Miles, and Neil Young) throughout their recording career, relying more on session musicians when the group became temporarily estranged after Pisces, Aquarius, Capricorn & Jones Ltd.
+                    and recorded some of their songs separately. With Pisces, Aquarius, Capricorn & Jones Ltd., the Monkees' fourth album, they went back to making music for the television show, except that they had control over the music and which songs
+                    would be chosen. They used a mixture of themselves and session musicians on the album. They would use this strategy of themselves playing, plus adding session musicians (including the Wrecking Crew, Louie Shelton, Glen Campbell, members
+                    of the Byrds and the Association, drummer "Fast" Eddie Hoh, Lowell George, Stephen Stills, Buddy Miles, and Neil Young) throughout their recording career, relying more on session musicians when the group became temporarily estranged
+                    after Pisces, Aquarius, Capricorn & Jones Ltd. and recorded some of their songs separately. </p>
+                <p>Using Chip Douglas again to produce, Pisces, Aquarius, Capricorn & Jones Ltd., released in November 1967 was the Monkees' fourth No. 1 album in a row, staying at No. 1 for 5 weeks, and was also their last No. 1 album. It featured the hit
+                    single "Pleasant Valley Sunday" (#3 on charts) b/w "Words" (#11 on charts), the A-side had Nesmith on electric guitar/backing vocals, Tork on piano/backing vocals, Dolenz on lead vocals and possibly guitar and Jones on backing vocals;
+                    the B-side had Micky and Peter alternating lead vocals, Peter played organ, Mike played guitar, percussion, and provided backing vocals, and Davy provided percussion and backing vocals. Other notable items about this album is that
+                    it features an early use of the Moog Synthesizer on two tracks, the Nesmith-penned "Daily Nightly", along with "Star Collector". All of its songs, except for two, were featured on the Monkees' television show during the second season.</p>
+                <p>Their next single, "Daydream Believer" (with a piano intro written by Tork), would shoot to No. 1 on the charts, letting the Monkees hold the No. 1 position in the singles chart and the album chart with Pisces simultaneously. "Daydream
+                    Believer" used the non-album track "Goin' Down" as its B-side, which featured Nesmith and Tork on guitar with Micky on lead vocals.</p>
+                <p>During their 1986 reunion, both Headquarters and Pisces, Aquarius, Capricorn & Jones Ltd. would return to the charts for 17 weeks.</p><br>
+                <h2 class="featurette-heading"><i>Good Times!</i> and 50th Anniverary:2015-present</h2>
+                <p class="gallery_product"><a href="assests/images/theboys.jpg" data-fancybox="gallery" data-caption="Reunion - The boys are back.">
+	            <img src="assests/images/theboys.jpg" style="width:485px !important;height:auto !important;" alt="" class="featurette-image img-responsive float-center"></a>Dolenz and Tork toured as the Monkees in 2015 without Nesmith's participation. Nesmith stated that he was busy with other ventures, although Dolenz said that "He's always invited." In February 2016, Dolenz announced that the Monkees would
+                    be releasing a new album, titled <i>Good Times!</i>, as a celebration of their 50th anniversary. <i>Good Times!</i>, produced by Adam Schlesinger of Fountains of Wayne, features contributions by all three surviving members, as well
+                    as a posthumous contribution from Jones. The album was released in May 2016 to considerable success, reaching No. 14 on the Billboard 200 and generally favorable reviews. </p>
+                <p>With the release of the album, the band, featuring Dolenz and Tork, commenced their 50th Anniversary Tour. Nesmith did not participate in most of the tour, again citing other commitments. He did, however, make a few appearances throughout
+                    the summer of 2016, appearing virtually via Skype to perform "Papa Gene's Blues" at one concert and in person for a four-song encore at another. In September, he replaced Tork on the tour for two dates while Tork attended to a family
+                    emergency. After Tork returned to the tour, Nesmith performed with the band for a concert at the Pantages Theatre in Hollywood on September 16, which he stated would likely be his final concert appearance with the Monkees. Dolenz and
+                    Tork's tour announced dates to the end of the year, including concerts in Australia and New Zealand.</p>
+                <p>After the end of the 50th Anniversary Tour, Dolenz, Tork, and Nesmith spent 2017 engaging in solo activities. In 2018, Nesmith toured with a revived version of the First National Band and stated that he was in negotiations with promoters
+                    to tour again with Dolenz later in the summer. On February 20, the tour was announced as "The Monkees Present: The Mike and Micky Show", their first tour as a duo. The pair will play Monkees music and promote the tour under the Monkees
+                    banner, but Nesmith stated that "there's no pretense there about Micky and I being the Monkees. We're not."</p><br><br> </div> <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button> </div>
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
     </div>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() { scrollFunction() };
 
-</form>
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="validator.js"></script>
-<script src="contact.js"></script>
-
-</body>
-<br><br><br>
-<footer class="container-fluid">
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body> <br><br><br>
+<footer>
     <div id="footer-details" class="row">
         <div class="col-sm-4 col-xs-4" id="footer-home">
             <h5 class="uppercase general-sub"><a id="foot-home" href="index.html">Home</a></h5>
@@ -124,7 +218,7 @@
             </ul>
         </div>
         <div class="col-sm-4 col-xs-4" id="footer-contact">
-            <h5 class="uppercase general-sub"><a id="foot-contact" href="theband.html">The Band</a></h5>
+            <h5 class="uppercase general-sub"><a id="foot-contact" href="booking.html">Booking</a></h5>
         </div>
     </div>
 </footer>
