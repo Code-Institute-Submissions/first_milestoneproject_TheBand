@@ -6,7 +6,7 @@ html {
 body {
     /* Margin bottom by footer height */
     margin: 0 0 100px;
-    background: url('https://coderguider.github.io/milestoneproject_band/assests/images/bgimg2.jpg') no-repeat center center fixed;
+    background: url('https://coderguider.github.io/first_milestoneproject_TheBand/assests/images/bgimg2.jpg') no-repeat center center fixed;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .66)!important;
     -webkit-background-size: cover;
     -moz-background-size: cover;

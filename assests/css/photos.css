@@ -6,7 +6,7 @@ html {
 body {
     /* Margin bottom by footer height */
     margin: 0 0 100px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://coderguider.github.io/milestoneproject_band/assests/images/red-curtain.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://coderguider.github.io/first_milestoneproject_TheBand/assests/images/red-curtain.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -16,21 +16,21 @@ Audio clips
 
 Also, they are in the process of creating a social media presence and would like to add links to their Facebook, Twitter and YouTube pages.
 
-###Technologies Used And Features
-##Youtube Embedded video
-##Spotify embedded audio
-##Photo Gallery
-##Bootstrap
-##JQuery
-##Social Media Links
+###Technologies Used And Features###
+##Youtube Embedded video##
+##Spotify embedded audio##
+##Photo Gallery##
+##Bootstrap##
+##JQuery##
+##Social Media Links##
 
-##Testing
+##Testing##
 Website is fully responsive and functional. Code was created in Cloud9 and tested constantly in Chrome web browser.
 
-##Design
+##Design##
 Website was created primaryily with Bootstrap 4.0 and styled with CSS.
 
-##Acknowledgments
+##Acknowledgments##
 * Color template was inspired from http://www.davematthewsband.com/
 * Background was found on https://css-tricks.com/perfect-full-page-background-image/
 * Resources - Codedrops, Stackoverflow, W3Schools.com, Boostrap, JQuery
