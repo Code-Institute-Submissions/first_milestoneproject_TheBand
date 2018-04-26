@@ -425,5 +425,6 @@ footer {
        to improve page load speed on mobile internet connections */
     background: url('../../assests/images/bgimg2_mobile.jpg');
     background-repeat: no-repeat;
-    background-attachment: initial;
+    background-attachment: fixed;
+    background-size: cover;
   }}
