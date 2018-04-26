@@ -423,5 +423,5 @@ footer {
   body {
     /* The file size of this background image is 93% smaller
        to improve page load speed on mobile internet connections */
-    background-image: url(''../../assests/images/bgimg2_mobile.jpg');
+    background: url('../../assests/images/bgimg2_mobile.jpg');
   }}
