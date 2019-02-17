@@ -35,7 +35,10 @@ Manual testing was undertaken for this application and satisfactorily passed. Te
 2. Tested the responsiveness of the site across serveral devices with varying screen dimensions and across different web browsers.
 
 ## Design
-Website layout was implemented with Bootstrap 4.0 and custom styled with CSS. 
+Website layout was implemented with Bootstrap 4.0 and custom styled with CSS. The sites graphics were kept colorful to represent the clients - a colorful 60's rock band. However, the news articles were kept clean in order to read the length of text.
+
+## Deployment
+You can see the site live [here](https://coderguider.github.io/first_milestoneproject_TheBand/).
 
 ## Credits
 
