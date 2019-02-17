@@ -1,5 +1,7 @@
 # CREATE A WEBSITE FOR A BAND
 
+## Brief
+
 Build a static (front-end only) website for a band. 
 
 The band is a 1960’s rock band (The Monkees) and have around 50 years experience of performing live at numerous events around the world. 
@@ -16,21 +18,36 @@ Audio clips
 
 Also, they are in the process of creating a social media presence and would like to add links to their Facebook, Twitter and YouTube pages.
 
-###Technologies Used And Features###
-##Youtube Embedded video##
-##Spotify embedded audio##
-##Photo Gallery##
-##Bootstrap##
-##JQuery##
-##Social Media Links##
+## Technologies Used And Features
 
-##Testing##
-Website is fully responsive and functional. Code was created in Cloud9 and tested constantly in Chrome web browser.
+1. Built with HTML, CSS and Javascript - JQuery
+2. Bootstrap Framework
+3. Youtube Embedded video
+4. Spotify embedded audio
+5. Photo Gallery
+6. Social Media Links
+7. Booking Form
+8. News articles
 
-##Design##
-Website was created primaryily with Bootstrap 4.0 and styled with CSS.
+## Testing
+Manual testing was undertaken for this application and satisfactorily passed. Tests were conducted as follows: 
+1. Tested navigation buttons and hyperlinks throughout the page
+2. Tested the responsiveness of the site across serveral devices with varying screen dimensions and across different web browsers.
 
-##Acknowledgments##
+## Design
+Website layout was implemented with Bootstrap 4.0 and custom styled with CSS. 
+
+## Credits
+
+**Conor Guider** - This project was completed as part of Code Institute's Full Stack Web Development course.
+
+### Media
+
+* Images were taken from Google Image search as well as provided by the course material.
+* Video provided by Youtube
+* Music provided by Spotify interface and course material
+
+### Acknowledgments
 * Color template was inspired from http://www.davematthewsband.com/
 * Background was found on https://css-tricks.com/perfect-full-page-background-image/
 * Resources - Codedrops, Stackoverflow, W3Schools.com, Boostrap, JQuery
